@@ -1,5 +1,5 @@
 import * as Device from 'expo-device';
-import { Platform, StyleSheet } from 'react-native';
+import { Platform, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AnimatedIcon } from '@/components/animated-icon';
@@ -42,6 +42,15 @@ export default function HomeScreen() {
         <ThemedText type="code" style={styles.code}>
           get started
         </ThemedText>
+
+        <View className="items-center gap-2 rounded-2xl border border-emerald-500 bg-emerald-50 px-5 py-4 shadow-sm">
+          <Text className="text-center text-lg font-bold text-emerald-700">
+            Tailwind test testicles
+          </Text>
+          <Text className="text-center text-sm font-medium text-emerald-600">
+            Test taliwind nativewind testicles
+          </Text>
+        </View>
 
         <ThemedView type="backgroundElement" style={styles.stepContainer}>
           <HintRow
